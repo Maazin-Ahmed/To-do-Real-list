@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO List</title>
+</head>
+<body>
+    <h2>Submit a To-Do Item</h2>
+    <form action="/submittodoitem" method="POST">
+        <label>Item Name:</label><br>
+        <input type="text" name="itemName" required><br><br>
+
+        <label>Item Description:</label><br>
+        <textarea name="itemDescription" required></textarea><br><br>
+
+        <input type="submit" value="Submit" id="submit">
+    </form>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: yellow;
+        }
+        h2 {
+            text-align: center;
+        }
+        form {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: whitesmoke;
+        }
+        #submit {
+            background-color: yellow;
+            color: black;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+    </style>
+</body>
+</body>
+</html>
